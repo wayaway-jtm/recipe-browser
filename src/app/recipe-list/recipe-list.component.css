@@ -1,0 +1,13 @@
+#recipe-li {
+    list-style: none;
+    display: flex;
+    margin: 1vw 0;
+    padding: 1vw;
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+#text {
+    width: 40vw;
+}
