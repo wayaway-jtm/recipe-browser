@@ -14,15 +14,15 @@ export class Recipe {
     uri: string;
 
     constructor(recipeObject: any) {
-        this.uri = recipeObject.recipe.uri;
-        this.label = recipeObject.recipe.label;
-        this.imgSrc = recipeObject.recipe.image;
-        this.srcSiteName = recipeObject.recipe.source;
-        this.srcSiteUrl = recipeObject.recipe.url;
-        this.servings = recipeObject.recipe.yield;
-        this.dietLabels = recipeObject.recipe.dietLabels;
-        this.healthLabels = recipeObject.recipe.healthLabels;
-        this.ingredientLines = recipeObject.recipe.ingredientLines;
-        this.calories = recipeObject.recipe.calories;
+        this.uri = recipeObject.uri;
+        this.label = recipeObject.label;
+        this.imgSrc = recipeObject.image;
+        this.srcSiteName = recipeObject.source;
+        this.srcSiteUrl = recipeObject.url;
+        this.servings = recipeObject.yield;
+        this.dietLabels = recipeObject.dietLabels;
+        this.healthLabels = recipeObject.healthLabels;
+        this.ingredientLines = recipeObject.ingredientLines;
+        this.calories = recipeObject.calories;
     }
 }
