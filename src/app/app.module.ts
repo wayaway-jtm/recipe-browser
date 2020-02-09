@@ -5,11 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RecipeListComponent } from './recipe-list/recipe-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeRouteComponent } from './home-route/home-route.component';
+import { SearchRouteComponent } from './search-route/search-route.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RecipeListComponent
+    RecipeListComponent,
+    HomeRouteComponent,
+    SearchRouteComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,

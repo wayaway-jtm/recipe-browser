@@ -19,7 +19,6 @@ export class RecipeListComponent implements OnInit {
         this.recipeList.push(new Recipe(recipeObj));
       }
     });
-    console.log(this.recipeList);
   }
 
 }

@@ -11,8 +11,10 @@ export class Recipe {
     healthLabels: HealthStatus[];
     ingredientLines: string[];
     calories: number;
+    uri: string;
 
     constructor(recipeObject: any) {
+        this.uri = recipeObject.recipe.uri;
         this.label = recipeObject.recipe.label;
         this.imgSrc = recipeObject.recipe.image;
         this.srcSiteName = recipeObject.recipe.source;
