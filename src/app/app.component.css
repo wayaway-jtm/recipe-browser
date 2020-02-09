@@ -1,0 +1,22 @@
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #565656;
+    padding: 0.5vh 1vw;
+    height: 7.5vh;
+}
+
+#edamam-badge {
+    height: 100%;
+}
+
+recipe-search-bar {
+    width: 30vw;
+}
+
+#app-wrapper:last-child {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}

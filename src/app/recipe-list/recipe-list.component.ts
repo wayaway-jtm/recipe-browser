@@ -10,8 +10,19 @@ import { Recipe } from '../recipe.class';
 export class RecipeListComponent implements OnInit {
 
   recipeList: Recipe[] = [];
+  showRecipes: boolean = false;
 
   constructor(private recipeService: RecipeApiService) { }
+
+  loadCurrentMeals() {
+    this.showRecipes = true;
+    this.recipeService.getCurrentMealRecipes().subscribe((data: any) => {
+      console.log(data);
+      for (const recipeObj of data.hits) {
+        this.recipeList.push(new Recipe(recipeObj.recipe));
+      }
+    });
+  }
 
   ngOnInit() {
     // this.recipeService.recipeSearch().subscribe((data: any) => {

@@ -1,3 +1,4 @@
+<button *ngIf="!showRecipes" (click)="loadCurrentMeals()">Load Recipes</button>
 <ul>
   <li *ngFor="let recipe of recipeList" id="recipe-li">
     <section id="text">
