@@ -1,7 +1,20 @@
-#searchBar {
-    padding: 2%;
+#search-wrapper {
+    padding-right: 1%;
     margin-right: 1vw;
     border: none;
+    display: flex;
     border-radius: 5px;
-    width: 100%;
+    background-color: white;
+    align-items: center;
+}
+
+#searchBar {
+    padding: 2%;
+    border: none;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+#search-icon {
+    max-height: 2.5vh;
 }

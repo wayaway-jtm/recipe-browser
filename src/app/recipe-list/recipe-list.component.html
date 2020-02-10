@@ -1,15 +1,25 @@
-<button *ngIf="!showRecipes" (click)="loadCurrentMeals()">Load Recipes</button>
+<!-- 
+  Loads recipes on click. Used when testing to prevent excess API calls
+
+  <button *ngIf="!showRecipes" (click)="loadCurrentMeals()">Load Recipes</button> 
+-->
+<div id="loading-div" *ngIf="isLoading">
+  Searching...
+</div>
 <ul>
   <li *ngFor="let recipe of recipeList" id="recipe-li">
     <section id="text">
       <h1>{{recipe.label}}</h1>
-      <ul>
-          <li id="ingredients" *ngFor="let ingredient of recipe.ingredientLines">
-              {{ingredient}}
-          </li>
+      <ul id="ingredient-list">
+        <li id="ingredients" *ngFor="let ingredient of recipe.ingredientLines">
+          {{ingredient}}
+        </li>
       </ul>
-      <p><a href="{{recipe.srcSiteUrl}}">Source</a>: {{recipe.srcSiteName}} (see link for cooking instructions) </p>
+      <p id="src-link">
+        <a href="{{recipe.srcSiteUrl}}">Source</a>: {{recipe.srcSiteName}}
+      </p>
+      <p id="instructions">(see link for cooking instructions)</p>
     </section>
-    <img src="{{recipe.imgSrc}}" alt="">
+    <img class="recipe-img" src="{{recipe.imgSrc}}" alt="{{recipe.label}} picture">
   </li>
 </ul>

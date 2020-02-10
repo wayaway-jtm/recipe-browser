@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*
+    Imported fonts:
+        font-family: 'Permanent Marker', cursive;
+        font-family: 'Work Sans', sans-serif;
+*/
+
 * {
     box-sizing: border-box;
 }

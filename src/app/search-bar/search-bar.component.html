@@ -1,1 +1,5 @@
-<input type="text" name="searchBar" id="searchBar" placeholder="Find a recipe" [(ngModel)]='searchText' />
+<div id="search-wrapper">
+  <input type="text" name="searchBar" id="searchBar" placeholder="Find a recipe" [(ngModel)]='searchText' (keyup.enter)="getSearchResults()" />
+  <!-- Image from FontAwesome.com. License information: https://fontawesome.com/license/free -->
+  <img id="search-icon" src="../../assets/search-solid.svg" alt="search icon" (click)="getSearchResults()">
+</div>
